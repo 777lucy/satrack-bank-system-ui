@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satrack Sistema Bancario - CancelCDT</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+  <header>
+    <button class="back-button" onclick="goBack()">&larr;</button>
+    <img src="../satrackbanksystemimage.png" alt="Bank Logo" class="bank-logo">
+  </header>
+
+  <main>
+    <form id="cancelCDT-form">
+      <h2>Cancelar CDT</h2>
+      <p>Realiza la cancelación de tu cuenta CDT de forma fácil, rápida y completamente segura.</p>
+
+      <label for="accountId">Número de cuenta (GUID):</label>
+      <input type="text" id="accountId" name="accountId" required>
+      
+      <button type="submit" class="cancel-button">Cancelar CDT</button>
+    </form>
+  </main>
+
+  <script src="cancelCDT.js"></script>
+</body>
+
+</html>

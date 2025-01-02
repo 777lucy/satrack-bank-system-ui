@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satrack Sistema Bancario - Average Balance</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+  <header>
+    <button class="back-button" onclick="goBack()">&larr;</button>
+    <img src="../satrackbanksystemimage.png" alt="Bank Logo" class="bank-logo">
+  </header>
+
+  <main>
+    <h2>Consulta de Saldo Promedio</h2>
+    <p>Consulta los saldos promedio de clientes individuales y empresariales.</p>
+
+    <section id="average-balance-result">
+      <h3>Cliente Persona</h3>
+      <div class="balance balance-individual">
+        <p id="individual-balance"></p>
+      </div>
+      <br/>
+      <br/>
+      <h3>Cliente Empresarial</h3>
+      <div class="balance balance-business">
+        <p id="business-balance"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="averageBalance.js"></script>
+</body>
+</html>

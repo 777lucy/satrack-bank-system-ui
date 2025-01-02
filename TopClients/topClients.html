@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satrack Sistema Bancario - Top Clients</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+  <header>
+    <button class="back-button" onclick="goBack()">&larr;</button>
+    <img src="../satrackbanksystemimage.png" alt="Bank Logo" class="bank-logo">
+  </header>
+
+  <main>
+    <h2>Top Clients</h2>
+    <p>Consulta los top 10 clientes con los saldos más altos en sus productos.</p>
+
+    <section id="top-clients-section">
+      <h3>Clientes Individuales</h3>
+      <table id="individual-clients" class="client-table">
+        <thead>
+          <tr>
+            <th>Posición</th>
+            <th>Identificación</th>
+            <th>Saldo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Individual client rows will be inserted here -->
+        </tbody>
+      </table>
+
+      <h3>Clientes Empresariales</h3>
+      <table id="business-clients" class="client-table">
+        <thead>
+          <tr>
+            <th>Posición</th>
+            <th>Identificación</th>
+            <th>Saldo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Business client rows will be inserted here -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="topClients.js"></script>
+</body>
+</html>

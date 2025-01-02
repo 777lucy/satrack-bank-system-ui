@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satrack Sistema Bancario - InterestProjection</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <header>
+        <button class="back-button" onclick="goBack()">&larr;</button>
+        <img src="../satrackbanksystemimage.png" alt="Bank Logo" class="bank-logo">
+    </header>
+
+    <main>
+        <form id="interest-projection-form">
+            <h2>Proyección de Intereses</h2>
+            <p>Consulta la proyección de intereses para tu cuenta según el plazo en meses.</p>
+
+            <label for="accountId">Número de cuenta (GUID):</label>
+            <input type="text" id="accountId" name="accountId" required>
+
+            <label for="months">Meses:</label>
+            <input type="number" id="months" name="months" min="1" required>
+
+            <button type="submit">Ver Proyección</button>
+        </form>
+
+        <section id="projection-result">
+            <h3>Proyección de Intereses</h3>
+            <p class="amount" id="amount-projection"></p>
+        </section>
+    </main>
+
+    <script src="interestSimulator.js"></script>
+</body>
+
+</html>

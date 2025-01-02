@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satrack Sistema Bancario - CreateClient</title>
+  <link rel="stylesheet" href="../styles.css">  
+</head>
+
+<body>
+  <header>
+    <button class="back-button" onclick="goBack()">&larr;</button>
+    <img src="../satrackbanksystemimage.png" alt="Bank Logo" class="bank-logo">
+  </header>
+
+  <main>
+    <form id="client-form">
+      <h2>Crear cliente</h2>
+      <p>Facilita la creación de nuevos clientes en nuestro avanzado sistema bancario.</p>
+
+      <label for="identification">Identificación:</label>
+      <input type="text" id="identification" name="identification" required>
+
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="clientType">Tipo Cliente:</label>
+      <select id="clientType" name="clientType">
+        <option value="0">Persona</option>
+        <option value="1">Empresa</option>
+      </select>
+
+      <div id="legal-representative-section">
+        <label for="legalRepresentativeIdentification">Representante legal Id:</label>
+        <input type="text" id="legalRepresentativeIdentification" name="legalRepresentativeIdentification" required>
+
+        <label for="legalRepresentativeName">Representante legal nombre:</label>
+        <input type="text" id="legalRepresentativeName" name="legalRepresentativeName" required>
+
+        <label for="legalRepresentativePhone">Representante legal teléfono:</label>
+        <input type="text" id="legalRepresentativePhone" name="legalRepresentativePhone" required>
+      </div>
+
+      <button type="submit">Crear</button>
+    </form>
+  </main>
+
+  <script src="createClientScript.js"></script>
+</body>
+
+</html>
